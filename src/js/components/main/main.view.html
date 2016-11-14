@@ -1,0 +1,27 @@
+<div class="parallaxBox imageOne"></div>
+<div class="row noMargin">
+  <div class="col s12 color-white center-align">
+    <h3>What do we do?</h3>
+    <p>Playing a musical instrument is one of the greatest joys in life. However, it can be very difficult to pick up the hobby. There are a vast number of manufacturers, all with many different models of guitar to choose from. Our goal is to remove some of that stress, and help find the guitar that's perfect for you!</p>
+    <form class="priceForm">
+      <label for="priceRange">What is the maximum you can spend?</label>
+      <p class="range-field">
+        <input type="range" min="1" max="4000">
+      </p>
+      <button type="submit" ng-click="mainCtrl.getGuitars()">Go</button>
+    </form>
+    <div class="row guitars">
+      <div class="col s4 singleGuitar"ng-repeat="guitar in mainCtrl.guitars">
+        <p>{{guitar.make}}</p>
+        <p>{{guitar.model}}</p>
+        <p>{{guitar.price | currency}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallaxBox imageTwo"></div>
+<div class="row noMargin">
+  <div class="col s12 color-darkblue">
+    <p>&copy Heathcliff productions</p>
+  </div>
+</div>

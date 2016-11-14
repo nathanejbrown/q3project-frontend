@@ -1,0 +1,49 @@
+.color-red {
+  background: #A31621;
+}
+
+.color-darkblue {
+  background: #4E8098;
+}
+
+.color-white {
+  background: #FCF7F8;
+}
+
+p {
+  color: orange;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallaxBox {
+
+  /* Full height */
+  height: 45vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imageOne {
+  background-image: url("../images/black-les-paul.jpeg");
+}
+
+.imageTwo {
+  background-image: url("../images/Gretsch.jpeg");
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.guitars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
